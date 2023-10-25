@@ -119,7 +119,7 @@ public class LeadService {
         }
     }
 
-    public void deleteLead(String clientId, long leadId) {
+    public void deleteLead(long leadId) {
         leadRepository.deleteLead(leadId);
     }
 

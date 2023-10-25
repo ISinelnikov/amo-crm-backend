@@ -88,7 +88,7 @@ public class WebhookController {
                     }
                     if (!deletedIds.isEmpty()) {
                         logger.info("Invoke processLeadWebhook, clientId: {}, deletedIds: {}.", clientId, deletedIds);
-                        deletedIds.forEach(id -> leadService.deleteLead(clientId, id));
+                        deletedIds.forEach(id -> leadService.deleteLead(id));
                     }
                 });
 

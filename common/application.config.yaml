@@ -1,0 +1,15 @@
+redirectUri: ${AMO_CRM_REDIRECT_URL}
+amoCrmPath: ${AMO_CRM_URL}
+
+notificationServicePath: http://localhost:8077/send-email
+
+roiStatProjectId: ${ROI_STAT_PROJECT_ID}
+roiStatApiKey: ${ROI_STAT_API_KEY}
+
+database:
+  url: ${DB_URL}
+  username: ${DB_USERNAME}
+  password: ${DB_PASSWORD}
+
+botHelp:
+  addLeadBotToken: ${TG_BOT_TOKEN}

@@ -1,0 +1,40 @@
+server:
+  port: 8088
+datasource:
+  driverClassName: org.postgresql.Driver
+logging:
+  level:
+    oss: debug
+app:
+  jwt:
+    secret: 7w!z%C*F-JaNdRgUjXn2r5u8x/A?D(G+
+    expirationMs: 86400000
+
+integration:
+  public: /api/integration/public
+  private: /api/integration/private
+
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+application:
+  name: OSS
+  description: OSS API
+  version: 1.0.0
+
+current:
+  integration:
+    id: c2796bed-544c-463e-b3e6-dba88c341910
+    refresh: true
+
+spring:
+  autoconfigure:
+    exclude: [
+      org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,
+      org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+    ]
